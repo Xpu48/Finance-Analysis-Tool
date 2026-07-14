@@ -1,2 +1,8 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Explicitly treat Python files as text and apply standard line fixes
+*.py text eol=lf
+
+# Prevent Git from trying to merge or corrupt SQLite database files if accidentally tracked
+*.db binary
